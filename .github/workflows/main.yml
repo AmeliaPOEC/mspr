@@ -18,4 +18,3 @@ jobs:
             rsync -r ./flask_hello_world/ ./flask
             rm -rf ./flask_hello_world
             curl -X POST --basic --user "${{ secrets.ALWAYSDATA_TOKEN }}:" https://api.alwaysdata.com/v1/site/${{ secrets.ALWAYSDATA_SITE_ID }}/restart/
-```
